@@ -17,7 +17,7 @@ import java.util.Iterator;
 
 public class TopKReducer extends  Reducer<Text, IntWritable, Text, IntWritable> {
 
-    private PriorityQueue<WordAndCount> pq = new PriorityQueue<WordAndCount>(10);;
+    private PriorityQueue<WordAndCount> pq = new PriorityQueue<WordAndCount>(3);;
 
 
     private Logger logger = Logger.getLogger(TopKReducer.class);
