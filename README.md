@@ -10,10 +10,20 @@ Prerequisite:
 
 - (If working with eclipse) Eclipse with m2eclipse plugin installed
 
+IMPORTANT:
 
 The java main class is:
 
+This is for task 1
 edu.cs.utexas.HadoopEx.WordCountTopKDriver 
+
+Change the java main class to the below for task 2
+edu.cs.utexas.HadoopEx.DelayTopKDriver
+
+That or specify the classpath in the command.
+You must mvn clean package after changing the pom before re-running
+
+java -jar target/topKHadoop-0.1-SNAPSHOT-jar-with-dependencies.jar task#_intermediate task#_output
 
 Input file:  Book-Tiny.txt  
 
